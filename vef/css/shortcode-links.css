@@ -1,0 +1,140 @@
+.button-shortcode, .button-shortcode:active {
+    box-shadow: 0px 1px 0px 0px rgba(240, 247, 250, 0.5)!important;
+    border-radius: 6px;
+	cursor: pointer;
+	padding: 17px 50px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #5b6178;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom,  rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 100%)!important;
+    transition:.3s;
+    margin-bottom: .8em;
+}
+
+.button-shortcode:hover {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 100%)!important;
+
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: .8em;
+    position: relative;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+span.ajouter {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+  background-color: #222;
+  width: 1.5em;
+  padding: 0 0.4em;
+  margin-left: 0.4em;
+  right: 4.5%;
+  position: relative;
+}
+
+a[title="En attente de validation"] {
+  cursor: pointer;
+}
+
+a[title="En attente de validation"]:hover::after {
+  content: 'En attente de validation';
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  padding: 5px;
+  border: 1px solid #000;
+  z-index: 2;
+}
+
+label.favlabel {
+  position: absolute;
+  top: 50%;
+  left: 52px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.1s ease-out;
+  max-width:78%;
+}
+
+input:focus + label {
+  top: 0;
+  left: 24px;
+  transform: translateY(-50%) scale(0.8);
+  font-size: 12px;
+  color: #999;
+  background-color: #fff;
+  padding: 4px 8px;
+}
+
+.ajouter {
+  transition: transform 0.35s ease-in-out, font-size 0.35s ease-in-out;
+  z-index: 2;
+}
+
+.ajouter.rotated { 
+  transform: rotate(360deg) scale(1.2);
+  z-index: 2;
+}
+
+.favicon {
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  left: 24px;
+}
+
+li.proposition {
+  display: flex;
+  align-items: baseline;
+}
+
+li.proposition p{
+  margin: 0;
+}
+
+.fill {
+  border: 1px solid #bbb;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  padding: 0.7em;
+  position: absolute;
+  top: 0;
+  left: 24px;
+  width: 0%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(to right, #e84244 0%, #e84244 100%);
+  transition: width 0.2s ease-in-out;
+}
+
+@keyframes explode-hide {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes explode-show {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
